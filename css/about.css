@@ -1,0 +1,114 @@
+.aboutBack {
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    background: linear-gradient(110deg,#fc6341 55%,  #FFDDAD 55%);
+}
+
+.centered {
+    width: 80%;
+    height: inherit;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+#studMuffin {
+    height: 500px;
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    animation: slide-right 1s ease-out 1;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.pageText {
+    width: 500px;
+    top: 200px;
+    position: absolute;
+    animation: slide-left 1s ease-out 1;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.pageText h2 {
+    margin: 0 0 0 20px;
+    font-size: 30px;
+    font-weight: 2000;
+    font-family: gilroy;
+}
+
+.pageText h3 {
+    margin: 20px 0 0 20px;
+    font-size: 25px;
+    font-family: gilroy;
+}
+
+.pageText p {
+    margin: 20px 0 0 20px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: gilroy;
+    text-align: justify;
+    font-weight: 1000;
+}
+
+
+@media only screen and (max-width: 550px) { 
+
+    .aboutBack {
+        height: 100vh;
+        background: linear-gradient(115deg,#fc6341 55%,  #FFDDAD 55%);
+    }
+
+    .centered {
+        width: 100%;
+    }
+
+    #studMuffin {
+        height: 250px;
+        width: 200px;
+        right: 30px;
+    }
+
+    .pageText {
+        width: 300px;
+        top: 150px;
+        left: 10px;
+    }
+
+    
+    .pageText h2 {
+        font-size: 20px;
+    }
+    
+    .pageText h3 {
+        font-size: 16px;
+    }
+    
+    .pageText p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+
+
+

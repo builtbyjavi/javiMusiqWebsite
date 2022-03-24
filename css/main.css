@@ -1,0 +1,430 @@
+@import url("/css/gallery.css");
+@import url("/css/about.css");
+@import url("/css/shop.css");
+@import url("/css/home.css");
+
+
+/* START: FONTS */
+@font-face {
+    font-family: gilroy;
+    src: url("/fontz/gilroy/webFonts/Gilroy-Light/font.woff");
+}
+/* END: FONTS */
+
+/* START: LAYOUT */
+
+html, body {
+    min-height: 100%;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    background: black;
+}
+
+div.container {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* END: LAYOUT */
+
+
+.title {
+    text-align: center;
+    font-family: gilroy;
+    font-size: 30px;
+    margin: 0;
+    padding: 90px 0 0 0;
+}
+
+
+
+/* START: NAVBAR/MENU */
+
+.labelTing {
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 30px;
+}
+
+#toggle {
+    display: none;
+}
+
+#logo {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    margin: 10px 0 0 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    max-width: 115vh;
+    height: 70px;
+    z-index: 2;
+    margin: 0 auto;
+    background-color: transparent;
+    transition: all ease-out .3s;
+
+}
+
+.scrolled {
+    background-color: rgba(245,245,245,0.9);
+}
+
+.scrollText {
+    color: black;
+}
+
+
+header ul {
+    float: right;
+    margin: 0 50px 0 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+}
+
+header a {
+    display: inline;
+    position: relative;
+    clear: right;
+    margin: 0 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+}
+
+header a:hover, header a:focus, header a:active {
+    color: gray;
+    text-decoration: none;
+}
+
+header a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+header a:active::before {
+    background-color: white;
+}
+header a:hover::before, header a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+#gLogo {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    margin: 10px 0 0 20px;
+}
+
+
+.gHeader a {
+    display: inline;
+    position: relative;
+    clear: right;
+    margin: 0 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+}
+
+.gHeader a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.gHeader a:active::before {
+    background-color: black;
+}
+
+
+/* END: BLACK NAVBAR/MENU */
+
+
+
+
+/* START: SOCIAL MEDIA FOOTER */
+
+footer {
+    width: 50%;
+    margin: 50px auto;
+    height: 50px;
+    border-top: 3px solid lightgray;
+    text-align: center;
+}
+
+footer ul {
+    width: 60%;
+    margin: 15px 0 0 70px;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    float: right;
+}
+
+footer p {
+    font-family: gilroy;
+    font-size: 12px;
+    margin: 5px 30px 0 0;
+    float: right;
+}
+
+footer img {
+    width: auto;
+    height: 30px;
+    padding: 0 5px 0 5px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(0.8);
+}
+
+
+/* END: SOCIAL MEDIA WIDGETS */
+
+
+/* START: LOADING PAGE FOR MOBILE */
+
+#mobileLoading {
+    margin: 50px 0 0 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+#dropBounce {
+    position: absolute;
+    -webkit-animation: floatBubble 1s 1  normal ease-in;
+    animation: floatBubble 1s 1  normal ease-in;
+    margin: 300px 0 0 0;
+    height: 700px;
+    width: 600px;
+    right: 30%;
+    z-index: 1;
+  }
+  
+  @-webkit-keyframes floatBubble {
+    0% {
+        top: -1000px;
+    }
+    100% {
+        top: 15%;
+    }
+  }
+  @keyframes floatBubble {
+    0% {
+        top: -1000px;
+    }
+    100% {
+        top: 15%;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+
+    .shopContent {
+        height: 100vh;
+    }
+
+    #dropBounce {
+        margin: 250px 0 0 0;
+        height: 300px;
+        width: 300px;
+        right: 10%;
+      }
+
+  }
+
+/* END: LOADING PAGE FOR MOBILE */
+
+
+
+/* START: UNDERLINE ACTIVE MENU ITEM */
+nav a.activeMenu {
+    border-bottom: 3px solid black;
+}
+/* END: UNDERLINE ACTIVE MENU ITEM */
+
+
+
+/* START: MEDIA QUERIES */
+@media only screen and (max-width: 550px) {
+
+    #logo {
+        width: 80px;
+        height: 45px;
+        margin: 10px 0 0 10px;
+    }
+
+    #gLogo {
+        width: 80px;
+        height: 45px;
+        margin: 10px 0 0 10px;
+    }
+
+    .labelTing {
+        position: absolute;
+        display: block; 
+        cursor: pointer;
+        color: white;
+        right: 10px;
+        top: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .labelColor {
+        color: black;
+    }
+
+    .menu {
+        text-align: center;
+        display: none;
+        z-index: -1;
+    }
+
+    .menu ul {
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 80px;
+        padding: 70px 0 0 0;
+        margin: 0;
+        z-index: -1;
+    }
+
+    .menu li {
+        display: block;
+        margin: 0;
+        padding: 5px 0 5px 0;
+        font-family: gilroy;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .menu #item1 {
+        transform-origin: top center;
+        animation: slideDown 300ms 60ms ease-in-out forwards;
+        background: rgba(245,245,245,0.8);
+      }
+    .menu #item2 {
+        transform-origin: top center;
+        animation: slideDown 300ms 120ms ease-in-out forwards;
+        background: rgba(245,245,245,0.8);
+    }
+    .menu #item3 {
+        transform-origin: top center;
+        animation: slideDown 300ms 180ms ease-in-out forwards;
+        background: rgba(245,245,245,0.8);
+    }
+    .menu #item4 {
+        transform-origin: top center;
+        animation: slideDown 300ms 240ms ease-in-out forwards;
+        background: rgba(245,245,245,0.8);
+    }
+
+    .menu #item5 {
+        transform-origin: top center;
+        animation: slideDown 300ms 300ms ease-in-out forwards;
+        background: rgba(245,245,245,0.8);
+        border-bottom-left-radius: 10px;
+    }
+
+    @keyframes slideDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-60px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+}
+
+@media only screen and (max-width: 550px) {
+
+    footer {
+        margin: 10px auto;
+
+    }
+
+    .foot {
+        position: relative;
+        width: 100%;
+        height: 110%;
+    }
+
+    footer ul {
+        position: absolute;
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0;
+        right: 20%;
+
+    }
+
+    footer li {
+        display: inline-block;
+        margin: 0 0 10px 0;
+    }
+
+    footer p {
+        position: absolute;
+        font-family: gilroy;
+        font-size: 10px;
+        bottom: 0;
+        left: 23%;
+    }
+
+    footer img {
+        width: auto;
+        height: 25px;
+        padding: 0 5px 0 5px;
+    }
+
+}
+
+/* END: MEDIA QUERIES */

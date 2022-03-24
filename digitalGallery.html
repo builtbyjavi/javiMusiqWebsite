@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>javiMusiq</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body class="page2">
+
+        <header class="gHeader">
+            <div>
+                <a href="/index.html">
+                    <img src="images/logo.png" alt="JaviMusiqLogo" id="logo">
+                </a>            
+            </div>
+
+            <label onclick="moveMenu()" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+                </ul>   
+            </nav>
+        </header>
+        
+
+        <div class="content">
+
+            <h1 class="title">Galer&iacutea</h1>
+
+            <div class="sideMenu">
+                <a href="./gallery.html" id="home"> film </a>
+                <a href="./digitalGallery.html" class="active"> digital </a>
+                <a href="./videoGallery.html" id="video"> video </a>
+            </div>
+
+            <div class="galleryPics">
+
+
+                <img id="dropBounce" src="images/loadingImage.png" alt="photoshop image of me">
+
+                <img src="images/mobileLoading.jpg" alt="page loading text" id="mobileLoading">
+
+            </div>
+            
+        </div>
+
+        <footer>
+            <nav>
+                <p>&copy 2020 builtByJavi LLC.</p>
+              <ul>
+                <li><a href="mailto:musiq4javi@gmail.com" target="_blank" ><img src="images/gmail.png" alt="gmail logo"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC_bPbRos46EvkK8dxSrcpSA" target="_blank" ><img src="images/youtube.png" alt="youtube logo"></a></li>
+                <li><a href="https://www.instagram.com/javi_musiq/" target="_blank" ><img src="images/ig.png" alt="instagram logo"></a></li>  
+            </ul>
+            </nav>
+        </footer>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="scripts/main-app.js"></script>
+        
+    </body>
+
+</html>
