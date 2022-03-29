@@ -1,8 +1,3 @@
-@import url("/css/gallery.css");
-@import url("/css/about.css");
-@import url("/css/shop.css");
-@import url("/css/home.css");
-
 
 /* START: FONTS */
 @font-face {
@@ -17,7 +12,7 @@ html, body {
     min-height: 100%;
     margin: 0 auto;
     scroll-behavior: smooth;
-    background: black;
+    font-family: gilroy;
 }
 
 div.container {
@@ -34,7 +29,6 @@ div.container {
 
 .title {
     text-align: center;
-    font-family: gilroy;
     font-size: 30px;
     margin: 0;
     padding: 90px 0 0 0;
@@ -66,9 +60,8 @@ div.container {
 header {
     position: fixed;
     width: 100%;
-    max-width: 115vh;
     height: 70px;
-    z-index: 2;
+    z-index: 3;
     margin: 0 auto;
     background-color: transparent;
     transition: all ease-out .3s;
@@ -100,7 +93,7 @@ header a {
     clear: right;
     margin: 0 5px;
     color: white;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 1000;
     line-height: 30px;
     text-decoration: none;
@@ -134,6 +127,10 @@ header a:hover::before, header a:focus::before {
     transform: scale(1, 1);
 }
 
+/* END: NAVBAR/MENU */
+
+/* START: BLACK NAVBAR/MENU */
+
 #gLogo {
     width: 90px;
     height: 50px;
@@ -141,14 +138,13 @@ header a:hover::before, header a:focus::before {
     margin: 10px 0 0 20px;
 }
 
-
 .gHeader a {
     display: inline;
     position: relative;
     clear: right;
     margin: 0 5px;
     color: black;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 1000;
     line-height: 30px;
     text-decoration: none;
@@ -177,46 +173,102 @@ header a:hover::before, header a:focus::before {
 /* END: BLACK NAVBAR/MENU */
 
 
+/* START: STAR BACKGROUND */
+.stars, .twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .stars {
+    background: #000 url("/images/stars.png") repeat fixed 100%;
+    z-index: 0;
+  }
+  
+  .twinkling {
+    background: transparent url("/images/twinkling.png") repeat fixed 100%;
+    z-index: 1;
+    animation:move-twink-back 200s linear infinite;
+  }
+  
+  @keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+    }
+    
+  /* END: STAR BACKGROUND */
 
 
 /* START: SOCIAL MEDIA FOOTER */
 
 footer {
-    width: 50%;
-    margin: 50px auto;
-    height: 50px;
-    border-top: 3px solid lightgray;
-    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0 1rem 0;
+    background: transparent;
+    z-index: 2;
+}
+
+.footerIcons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul {
-    width: 60%;
-    margin: 15px 0 0 70px;
-    padding: 0;
+    padding: 1rem 0 1rem 0;
+    list-style-type: none;
 }
 
 footer li {
     display: inline;
-    float: right;
+    padding: 0 1em 0 1em;
+}
+
+footer i {
+    color: white;
+    transition: transform 200ms ease-out;
+}
+
+footer i:hover {
+    transform: scale(1.5);
 }
 
 footer p {
-    font-family: gilroy;
-    font-size: 12px;
-    margin: 5px 30px 0 0;
-    float: right;
+    margin: 0;
+    font-size: 1rem;
+    color: white;
 }
 
-footer img {
-    width: auto;
-    height: 30px;
-    padding: 0 5px 0 5px;
-    transition: transform 0.3s;
+.footerCopyright {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer img:hover {
-    transform: scale(0.8);
+#portfolioLink {
+    text-decoration: none;
+    color: white;
 }
+
+#portfolioLink:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
 
 
 /* END: SOCIAL MEDIA WIDGETS */
@@ -336,7 +388,6 @@ nav a.activeMenu {
         display: block;
         margin: 0;
         padding: 5px 0 5px 0;
-        font-family: gilroy;
     }
 
     #toggle:checked + .menu {
@@ -385,45 +436,6 @@ nav a.activeMenu {
 }
 
 @media only screen and (max-width: 550px) {
-
-    footer {
-        margin: 10px auto;
-
-    }
-
-    .foot {
-        position: relative;
-        width: 100%;
-        height: 110%;
-    }
-
-    footer ul {
-        position: absolute;
-        width: 100%;
-        margin: 10px 0 0 0;
-        padding: 0;
-        right: 20%;
-
-    }
-
-    footer li {
-        display: inline-block;
-        margin: 0 0 10px 0;
-    }
-
-    footer p {
-        position: absolute;
-        font-family: gilroy;
-        font-size: 10px;
-        bottom: 0;
-        left: 23%;
-    }
-
-    footer img {
-        width: auto;
-        height: 25px;
-        padding: 0 5px 0 5px;
-    }
 
 }
 

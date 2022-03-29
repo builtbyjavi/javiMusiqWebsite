@@ -82,7 +82,18 @@ $(function() {
 
 // END: NAVBAR COLOR
 
+//  START ICON ON-HOVER
 
+const icons = document.querySelectorAll(".fa-brands");
+icons.forEach(icon => icon.addEventListener('mouseenter', function(event) {
+  icon.classList.remove('fa-bounce');
+}));
+icons.forEach(icon => icon.addEventListener('mouseleave', function(event) {
+  icon.classList.add('fa-bounce');
+}));
+
+
+// END ICON ON-HOVER
 
 
 // START: MOVE SIDEMENU WHEN MENU ACTIVE

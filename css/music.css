@@ -1,0 +1,81 @@
+
+.starBackgroundContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.tripleHeadContainer {
+    position:fixed;
+    z-index:1;
+    height: 80%;
+    padding-top: 70px;
+    width: auto;
+    align-self: center;
+    
+}
+
+.tripleHead {
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.contentContainer {
+    width: 100vw;
+    height: auto;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid white 5px;
+    border-radius: 5px; */
+    margin: 2rem 0 2rem 0;
+    z-index: 2;
+}
+
+.comingSoonContainer {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#comingSoonImg {
+    max-height: 250px;
+    width: 100%;
+}
+
+#comingSoonText {
+    color: white;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 15px;
+}
+
+.youtube {
+    height: 300px;
+    max-height: 300px;
+    max-width: 600px;
+    width: 600px;
+}
+
+/* .card iframe {
+    height: 100%;
+    width: 75%;
+} */
+

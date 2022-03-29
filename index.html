@@ -7,17 +7,17 @@
         <title>javiMusiq</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/home.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://kit.fontawesome.com/80df9c29d9.js" crossorigin="anonymous"></script>
     </head>
 
 
     <body>
 
         <div class="container">
-
 
             <header id="header">
                 <div>
@@ -32,16 +32,14 @@
                 <nav class="menu">
                     <ul>
                         <li id="item1"><a href="/index.html" class="activeMenu" >Home</a></li>
-                        <li id="item2"><a href="gallery.html" >Galeria</a></li>
+                        <li id="item2"><a href="music.html">Music</a></li>
                         <li id="item3"><a href="about.html">About</a></li>
-                        <li id="item4"><a href="shop.html" >Shop</a></li>
-                        <li id="item5"><a href="cart.html" ><ion-icon name="cart-outline"></ion-icon></a></li>
                     </ul>   
                 </nav>
             </header>
     
     
-            <section>
+            <div>
 
                 <!-- <div class="loaderWrapper">
                     <img src="/images/loadingAstronaut.gif" class="loader">
@@ -56,118 +54,43 @@
                         <div class="textContainer">
                             <p><span class="autoText"></span><span class="cursor typing">|</span></p>
                         </div>
-                        <div>
+                        <div class="sexyBoiContainer">
                             <img src="images/portrait.png" alt="javiSexy" class="sexyBoi">
                         </div>
-                    </div>
-
-                    
-                    <div class="buttonPlace">
-                        <a class="scrollButton" href="#musiq"><img alt="Arrow Down Icon" src="images/scroll-down arrow.png"></a>
-                    </div>
-                </div>
-
-                <div class="divider" id="musiq">
-                    <h1 class="latestReleases">Latest Releases</h1>
-                </div>
-                
-                <div class="secondPage">
-
-                    <div id="slider">
-                        <input type="radio" name="slider" id="slide1" checked>
-                        <input type="radio" name="slider" id="slide2" >
-                        <input type="radio" name="slider" id="slide3" >
-                        <input type="radio" name="slider" id="slide4" >
-                        <div id="slides">
-                            <div id="overflow">
-                                <div class="inner">
-                                    <div class="slide slide_1">
-                                        <div class=slide-content>
-                                            <h2 id="vidText"> 
-                                                miHistoriaEntreTusDedos
-                                            </h2>
-                                            <iframe 
-                                                class="responsive-iframe"
-                                                src="https://www.youtube.com/embed/xeFRgRwkydo" 
-                                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                                gyroscope; picture-in-picture" allowfullscreen>
-                                            </iframe>
-                                        </div>
-                                    </div>
-                                    <div class="slide slide_2">
-                                        
-                                        <div class=slide-content>
-                                            <h2 id="vidText"> 
-                                                slowBluesStudy
-                                            </h2>
-                                            <iframe 
-                                                class="responsive-iframe"
-                                                src="https://www.youtube.com/embed/8b8OLbBQ5jY" 
-                                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                                gyroscope; picture-in-picture" allowfullscreen>
-                                            </iframe>
-                                        </div>
-                                    </div>
-                                    <div class="slide slide_3">
-                                        <div class=slide-content>
-                                            <h2 id="vidText"> 
-                                                miHistoriaEntreTusDedos
-                                            </h2>
-                                            <iframe 
-                                                class="responsive-iframe"
-                                                src="https://www.youtube.com/embed/xeFRgRwkydo" 
-                                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                                gyroscope; picture-in-picture" allowfullscreen>
-                                            </iframe>
-                                        </div>
-                                    </div>
-                                    <div class="slide slide_4">
-                                        <div class=slide-content>
-                                            <h2 id="vidText"> 
-                                                slowBluesStudy
-                                            </h2>
-                                            <iframe 
-                                                class="responsive-iframe"
-                                                src="https://www.youtube.com/embed/8b8OLbBQ5jY" 
-                                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                                gyroscope; picture-in-picture" allowfullscreen>
-                                            </iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div id="controls">
-                            <label for="slide1"></label>
-                            <label for="slide2"></label>
-                            <label for="slide3"></label>
-                            <label for="slide4"></label>
-                        </div>
-                        <div id="bullets">
-                            <label for="slide1"></label>
-                            <label for="slide2"></label>
-                            <label for="slide3"></label>
-                            <label for="slide4"></label>
+                        <div>
+                            <i class="fa-solid fa-angle-down fa-3x fa-beat-fade scrollButton"></i>
                         </div>
                     </div>
-                </div>
-                
 
-            </section>
-
-            <footer>
-                <nav class="foot">
+                    <footer>
+                        <div class="footerIcons">
+                            <ul>
+                                <li>
+                                    <a href="https://open.spotify.com/artist/1UHOKeroZ6uopPhQDeosV8?si=Je0TlO5GQjmw8zZZD0DlVg" target="_blank"><i class="fa-brands fa-spotify fa-2x fa-bounce"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UC_bPbRos46EvkK8dxSrcpSA" target="_blank"><i class="fa-brands fa-youtube fa-2x fa-bounce"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/javi_musiq/" target="_blank"><i class="fa-brands fa-instagram fa-2x fa-bounce"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://flic.kr/ps/3YybVp" target="_blank"><i class="fa-brands fa-flickr fa-2x fa-bounce"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://music.apple.com/us/artist/j-solovino/1586474588" target="_blank"><i class="fa-brands fa-itunes-note fa-2x fa-bounce"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footerCopyright">
+                            <p>&copy; 2022 <a href="https://builtbyjavi.com" id="portfolioLink" target="_blank">builtByJavi</a></p>
+                        </div>
+                    </footer>
                     
-                  <ul>
-                    <li><a href="mailto:musiq4javi@gmail.com" target="_blank" ><img src="images/gmail.png" alt="gmail logo"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC_bPbRos46EvkK8dxSrcpSA" target="_blank" ><img src="images/youtube.png" alt="youtube logo"></a></li>
-                    <li><a href="https://www.instagram.com/javi_musiq/" target="_blank" ><img src="images/ig.png" alt="instagram logo"></a></li>  
-                </ul>
-
-                <p>&copy 2020 builtByJavi LLC.</p>
-                </nav>
-            </footer>
-
+                </div> 
+                 
+            </div>          
 
         </div>
 
